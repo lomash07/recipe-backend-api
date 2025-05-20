@@ -17,10 +17,11 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-                .allowedOrigins("*") // Your frontend URL
+        registry.addMapping("/**")  // Apply to all endpoints
+                .allowedOrigins("https://recipe-frontend-gilt.vercel.app")  // Your frontend origin
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                .allowedHeaders("*");
+                .allowedHeaders("*")
+                .allowCredentials(true);  // Optional, if using cookies
     }
 
     @Override

@@ -24,7 +24,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins= "https://recipe-frontend-gilt.vercel.app", allowCredentials = "true")
 @RequiredArgsConstructor
 @Slf4j
 public class AuthController {
