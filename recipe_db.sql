@@ -20,6 +20,7 @@ USE `recipe_db`;
 --
 -- Table structure for table `ingredients`
 --
+use root
 
 DROP TABLE IF EXISTS `ingredients`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
